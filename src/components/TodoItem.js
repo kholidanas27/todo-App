@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React, { useRef } from "react";
 import { AiFillEdit } from "react-icons/ai";
 import { IoCheckmarkDoneSharp, IoClose } from "react-icons/io5";
+// import swal from "sweetalert/with-react";
 
 const TodoItem = (props) => {
   const { item, updateTodo, removeTodo, completeTodo } = props;
@@ -20,6 +21,21 @@ const TodoItem = (props) => {
       inputRef.current.disabled = true;
     }
   };
+  // swal({
+  //   title: "Apakah anda yaking?",
+  //   text: "Anda tidak akan dapat mengembalikan data ini!",
+  //   icon: "warning",
+  //   buttons: true,
+  //   dangerMode: true,
+  // }).then((willDelete) => {
+  //   if (willDelete) {
+  //     swal("Data Todo berhasil dihapus!", {
+  //       icon: "success",
+  //     });
+  //   } else {
+  //     swal("Data batal dihapus!");
+  //   }
+  // });
   return (
     <motion.li
       initial={{ x: "150vw", transition: { type: "spring", duration: 2 } }}
