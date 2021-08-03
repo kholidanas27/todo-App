@@ -74,7 +74,6 @@ const Todos = (props) => {
           </Button>
         </Modal.Footer>
       </Modal>
-      <br />
     </div>
   );
 };
