@@ -55,7 +55,7 @@ const Todos = (props) => {
 
       <Modal show={show} onHide={handleClose} keyboard={false}>
         <Modal.Header closeButton>
-          <Modal.Title>Add Todos</Modal.Title>
+          <Modal.Title>Tambah Todos</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <input
@@ -67,10 +67,10 @@ const Todos = (props) => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Tutup
           </Button>
           <Button variant="primary" onClick={() => add()}>
-            Add
+            Tambah
           </Button>
         </Modal.Footer>
       </Modal>
